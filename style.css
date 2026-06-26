@@ -79,6 +79,94 @@ a   { color: inherit; text-decoration: none; }
 ul, ol { list-style: none; }
 address { font-style: normal; }
 
+/* ============================================================
+   SVG / アイコン 統合リセット v3
+   原則: SVG の width/height は HTML 属性で指定しない。
+         CSS の各コンテナルールで width/height を完全制御する。
+============================================================ */
+
+/* グローバル: SVGをブロック要素に、デフォルトサイズ暴走を防ぐ */
+svg {
+  display: block;
+  flex-shrink: 0;
+  overflow: visible;
+  max-width: none;   /* img { max-width:100% } の波及をブロック */
+}
+
+/* ---- アイコンコンテナ + SVG サイズ一元定義 ---- */
+
+/* 選ばれる理由カード: 48px */
+.reason-card__icon {
+  width: 48px; height: 48px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--green);
+  margin-bottom: 1.25rem;
+}
+.reason-card__icon svg { width: 48px; height: 48px; }
+
+/* まるっとカード: 44px */
+.marutto-card__icon {
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--mc);
+  margin-bottom: .875rem;
+  position: relative; z-index: 1;
+}
+.marutto-card__icon svg { width: 44px; height: 44px; }
+
+/* 安全への取り組み: 36px */
+.safety__item-icon {
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: #6ee7a0;
+}
+.safety__item-icon svg { width: 36px; height: 36px; }
+
+/* エリア・フォーム等のインラインアイコン: 20px */
+.area__card-title svg,
+.contact__tel-num > svg,
+.recruit__point > svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+/* FAQ アイコン */
+.faq__icon { width: 20px; height: 20px; flex-shrink: 0; }
+.faq__arrow { width: 20px; height: 20px; flex-shrink: 0; transition: transform var(--dur); }
+
+/* ボタン内SVG */
+.btn svg,
+.marutto-card__btn svg,
+.svc-card__link svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+/* ヘッダー電話アイコン */
+.header__tel svg { width: 15px; height: 15px; }
+
+/* page-top */
+.page-top svg { width: 20px; height: 20px; }
+
+/* contact 電話番号アイコン */
+.contact__tel-num svg { width: 24px; height: 24px; flex-shrink: 0; }
+
+/* アーチ装飾SVG (まるっとカード上部): 幅100% / 高さ固定 */
+.marutto-card__arc-svg {
+  width: 100% !important;
+  height: 60px !important;
+  max-width: none;
+  color: var(--mc);
+  opacity: .25;
+}
+
+/* スマホ縮小 */
+@media (max-width: 768px) {
+  .reason-card__icon,
+  .reason-card__icon svg { width: 40px; height: 40px; }
+  .marutto-card__icon,
+  .marutto-card__icon svg { width: 36px; height: 36px; }
+  .safety__item-icon,
+  .safety__item-icon svg { width: 32px; height: 32px; }
+}
+
 .sr-only {
   position: absolute; width: 1px; height: 1px;
   padding: 0; margin: -1px; overflow: hidden;
@@ -678,13 +766,6 @@ address { font-style: normal; }
 }
 .reason-card:hover::before { transform: scaleX(1); }
 
-.reason-card__icon {
-  width: 52px; height: 52px;
-  color: var(--green);
-  margin-bottom: 1.25rem;
-}
-.reason-card__icon svg { width: 100%; height: 100%; }
-
 .reason-card__title {
   font-size: 1rem; font-weight: 700;
   color: var(--navy); line-height: 1.45;
@@ -879,20 +960,8 @@ address { font-style: normal; }
   height: 60px;
   pointer-events: none;
 }
-.marutto-card__arc-svg {
-  width: 100%; height: 100%;
-  color: var(--mc);
-  opacity: .25;
-}
 
 /* アイコン */
-.marutto-card__icon {
-  width: 48px; height: 48px;
-  color: var(--mc);
-  margin-bottom: .875rem;
-  position: relative; z-index: 1;
-}
-.marutto-card__icon svg { width: 100%; height: 100%; }
 
 /* まるっとラベル */
 .marutto-card__prefix {
@@ -1001,11 +1070,7 @@ address { font-style: normal; }
   gap: 1.5rem 2.5rem; margin-bottom: 2.5rem;
 }
 .safety__item { display: flex; gap: 1rem; align-items: flex-start; }
-.safety__item-icon {
-  width: 40px; height: 40px; flex-shrink: 0;
-  color: #6ee7a0;
-}
-.safety__item-icon svg { width: 100%; height: 100%; }
+
 .safety__item-title {
   font-size: .9375rem; font-weight: 700; color: var(--white); margin-bottom: .35rem;
 }
@@ -1148,10 +1213,7 @@ address { font-style: normal; }
 .faq__q::-webkit-details-marker { display: none; }
 
 .faq__icon { flex-shrink: 0; color: var(--green); }
-.faq__arrow {
-  margin-left: auto; flex-shrink: 0; color: var(--gray-400);
-  transition: transform var(--dur);
-}
+.faq__arrow { margin-left: auto; color: var(--gray-400); }
 .faq__item[open] .faq__arrow { transform: rotate(180deg); }
 .faq__a {
   padding: 0 1.5rem 1.25rem calc(1.5rem + 20px + .875rem);
