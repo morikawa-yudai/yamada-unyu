@@ -3,27 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#1a3a5c">
+  <meta name="theme-color" content="#1a5c3a">
 
-  <!-- SEO -->
-  <title>山田運輸有限会社 | 首都圏の法人物流・オフィス移転・積み合わせ配送</title>
-  <meta name="description" content="山田運輸有限会社は1977年創業。首都圏の積み合わせ配送・オフィス移転・什器設置・産業廃棄物収集運搬を手がける埼玉の総合物流会社。2t/4t計50台以上の車両と70名のプロが、法人物流を支えます。">
-  <meta name="keywords" content="山田運輸,物流,首都圏,積み合わせ配送,オフィス移転,春日部,埼玉,引越し,什器設置,産業廃棄物">
+  <!-- ========== SEO ========== -->
+  <!-- wp:post-title (WordPressテーマ化時はwp_title()に置換) -->
+  <title>山田運輸有限会社 | まるっと任せて、物流のその先へ。</title>
+  <meta name="description" content="配送・人材・処分・清掃・買取・サポートまで。山田運輸有限会社は1977年創業、首都圏を拠点とする総合物流パートナーです。企業の困りごとをまるっと一括で支えます。">
+  <meta name="keywords" content="山田運輸,物流,首都圏,積み合わせ配送,オフィス移転,産業廃棄物,春日部,埼玉,まるっとシリーズ">
   <link rel="canonical" href="https://yamadaunyu.co.jp/">
 
-  <!-- OGP -->
+  <!-- ========== OGP ========== -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="山田運輸有限会社 | 首都圏の法人物流パートナー">
-  <meta property="og:description" content="1977年創業。首都圏積み合わせ・オフィス移転・什器設置・産業廃棄物収集運搬。70名・50台の実力で法人物流を支えます。">
+  <meta property="og:title" content="山田運輸有限会社 | まるっと任せて、物流のその先へ。">
+  <meta property="og:description" content="配送・人材・処分・清掃・買取・サポートまで。企業の困りごとをまるっと一括で支える物流パートナー。1977年創業、埼玉春日部。">
   <meta property="og:url" content="https://yamadaunyu.co.jp/">
   <meta property="og:site_name" content="山田運輸有限会社">
   <meta property="og:image" content="https://yamadaunyu.co.jp/wp-content/uploads/2025/05/yamada_fv-4.jpg">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="山田運輸有限会社 | 首都圏の法人物流パートナー">
-  <meta name="twitter:description" content="1977年創業。首都圏積み合わせ・オフィス移転・什器設置・産業廃棄物収集運搬。70名・50台の実力で法人物流を支えます。">
+  <meta name="twitter:title" content="山田運輸有限会社 | まるっと任せて、物流のその先へ。">
+  <meta name="twitter:description" content="配送・人材・処分・清掃・買取・サポートまで。企業の困りごとをまるっと一括で支える物流パートナー。">
 
-  <!-- Structured Data -->
+  <!-- ========== 構造化データ ========== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,7 +32,7 @@
     "name": "山田運輸有限会社",
     "url": "https://yamadaunyu.co.jp/",
     "logo": "https://yamadaunyu.co.jp/wp-content/uploads/2025/05/image.png",
-    "description": "首都圏の積み合わせ配送・オフィス移転・什器設置・産業廃棄物収集運搬を手がける総合物流会社",
+    "description": "配送・人材・処分・清掃・買取・サポートまで、企業の困りごとをまるっと一括で支える首都圏の総合物流パートナー",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "大沼7-50",
@@ -47,36 +48,44 @@
   }
   </script>
 
-  <!-- Fonts -->
+  <!-- ========== Fonts ========== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ========== HEADER ========== -->
+  <!-- ========== HEADER ==========
+       WP化時: header.php に分割
+       キャッチコピー・ロゴ: カスタマイザーから設定予定
+  ========== -->
   <header class="header" id="header" role="banner">
     <div class="header__inner">
-      <a href="#" class="header__logo" aria-label="山田運輸有限会社 トップページ">
-        <img src="https://yamadaunyu.co.jp/wp-content/uploads/2025/05/image.png"
-             alt="山田運輸有限会社ロゴ"
-             class="header__logo-img"
-             width="160" height="48">
+
+      <!-- ロゴ: WP化時は get_custom_logo() に置換 -->
+      <a href="#" class="header__logo" aria-label="山田運輸有限会社 トップページへ">
+        <img
+          src="https://yamadaunyu.co.jp/wp-content/uploads/2025/05/image.png"
+          alt="山田運輸有限会社"
+          class="header__logo-img"
+          width="160" height="48">
       </a>
+
+      <!-- グローバルナビ: WP化時は wp_nav_menu() に置換 -->
       <nav class="header__nav" id="globalNav" aria-label="グローバルナビゲーション">
         <ul class="header__nav-list">
           <li><a href="#reason">選ばれる理由</a></li>
           <li class="has-dropdown">
-            <a href="#services">サービス</a>
+            <a href="#services">まるっとシリーズ</a>
             <ul class="dropdown">
-              <li><a href="#svc-transport">首都圏積み合わせ</a></li>
-              <li><a href="#svc-office">オフィス移転</a></li>
-              <li><a href="#svc-waste">産業廃棄物</a></li>
-              <li><a href="#svc-fixture">什器設置</a></li>
-              <li><a href="#svc-storage">貨物保管</a></li>
-              <li><a href="#svc-contract">請負</a></li>
+              <li><a href="#svc-delivery">まるっと配送</a></li>
+              <li><a href="#svc-hr">まるっと人材</a></li>
+              <li><a href="#svc-disposal">まるっと処分</a></li>
+              <li><a href="#svc-cleaning">まるっと清掃</a></li>
+              <li><a href="#svc-purchase">まるっと買取</a></li>
+              <li><a href="#svc-support">まるっとサポート</a></li>
             </ul>
           </li>
           <li><a href="#safety">安全への取り組み</a></li>
@@ -84,58 +93,137 @@
           <li><a href="#recruit">採用情報</a></li>
         </ul>
       </nav>
+
       <div class="header__actions">
         <a href="tel:0488789116" class="header__tel" aria-label="電話番号 048-878-9116">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"/></svg>
           048-878-9116
         </a>
         <a href="#contact" class="btn btn--primary btn--sm">お問い合わせ</a>
       </div>
-      <button class="header__hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="globalNav">
+
+      <button class="header__hamburger" id="hamburger"
+        aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
+  <!-- モバイルナビ -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+    <ul class="mobile-nav__list">
+      <li><a href="#reason">選ばれる理由</a></li>
+      <li class="mobile-nav__parent"><span>まるっとシリーズ</span></li>
+      <li class="sub"><a href="#svc-delivery">まるっと配送</a></li>
+      <li class="sub"><a href="#svc-hr">まるっと人材</a></li>
+      <li class="sub"><a href="#svc-disposal">まるっと処分</a></li>
+      <li class="sub"><a href="#svc-cleaning">まるっと清掃</a></li>
+      <li class="sub"><a href="#svc-purchase">まるっと買取</a></li>
+      <li class="sub"><a href="#svc-support">まるっとサポート</a></li>
+      <li><a href="#safety">安全への取り組み</a></li>
+      <li><a href="#company">会社案内</a></li>
+      <li><a href="#recruit">採用情報</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="tel:0488789116" class="btn btn--primary btn--md">📞 048-878-9116</a>
+      <a href="#contact" class="btn btn--outline-dark btn--md">フォームで相談</a>
+    </div>
+  </nav>
+
   <main id="main">
 
-    <!-- ========== HERO ========== -->
+    <!-- ========== HERO ==========
+         WP化時: フロントページテンプレートに配置
+         キャッチコピー・サブコピー: カスタマイザーまたはACFで管理予定
+         背景動画: video/hero.mp4 を配置後 hidden 解除
+    ========== -->
     <section class="hero" id="hero" aria-label="メインビジュアル">
-      <div class="hero__media">
-        <img src="https://yamadaunyu.co.jp/wp-content/uploads/2025/05/yamada_fv-4.jpg"
-             alt="山田運輸のトラックが首都圏を走る様子"
-             class="hero__img"
-             loading="eager"
-             fetchpriority="high">
-        <div class="hero__overlay"></div>
-        <!-- Video placeholder structure for future use -->
-        <div class="hero__video-wrap" id="heroVideoWrap" hidden>
-          <video class="hero__video" id="heroVideo" autoplay muted loop playsinline poster="https://yamadaunyu.co.jp/wp-content/uploads/2025/05/yamada_fv-4.jpg">
-            <!-- <source src="video/hero.mp4" type="video/mp4"> -->
-          </video>
+
+      <!-- 幾何学背景レイヤー（画像なしでも成立するデザイン） -->
+      <div class="hero__geo" aria-hidden="true">
+        <div class="hero__geo-circle hero__geo-circle--1"></div>
+        <div class="hero__geo-circle hero__geo-circle--2"></div>
+        <div class="hero__geo-circle hero__geo-circle--3"></div>
+        <div class="hero__geo-grid"></div>
+        <div class="hero__geo-lines" aria-hidden="true">
+          <div class="hero__geo-line hero__geo-line--1"></div>
+          <div class="hero__geo-line hero__geo-line--2"></div>
+          <div class="hero__geo-line hero__geo-line--3"></div>
         </div>
       </div>
+
+      <!-- 動画（将来対応: video/hero.mp4 配置後 hidden 外す） -->
+      <div class="hero__video-wrap" id="heroVideoWrap" hidden>
+        <video class="hero__video" id="heroVideo" autoplay muted loop playsinline
+          poster="https://yamadaunyu.co.jp/wp-content/uploads/2025/05/yamada_fv-4.jpg">
+          <!-- <source src="video/hero.mp4" type="video/mp4"> -->
+        </video>
+        <div class="hero__video-overlay"></div>
+      </div>
+
       <div class="hero__content">
-        <div class="hero__content-inner fade-up">
-          <p class="hero__eyebrow">YAMADA TRANSPORT — Since 1977</p>
-          <h1 class="hero__title">
-            運ぶだけでは<br>終わらない。<br>
-            <span>企業物流を支える</span><br>
-            <span>パートナー。</span>
+        <div class="hero__content-inner">
+          <p class="hero__eyebrow fade-up">
+            <span class="hero__eyebrow-badge">YAMADA TRANSPORT</span>
+            Since 1977 — 創業47年の実績
+          </p>
+          <!-- WP化時: the_field('hero_main_copy') -->
+          <h1 class="hero__title fade-up" style="--delay:.1s">
+            まるっと任せて、<br>
+            <em>物流のその先へ。</em>
           </h1>
-          <p class="hero__lead">首都圏の積み合わせ配送からオフィス移転まで。<br>山田運輸が、貴社の物流課題を丸ごと解決します。</p>
-          <div class="hero__cta">
-            <a href="#contact" class="btn btn--white btn--lg">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          <!-- WP化時: the_field('hero_sub_copy') -->
+          <p class="hero__lead fade-up" style="--delay:.2s">
+            配送・人材・処分・清掃・買取・サポートまで。<br>
+            山田運輸は、企業の困りごとを一括で支える物流パートナーです。
+          </p>
+          <div class="hero__cta fade-up" style="--delay:.3s">
+            <a href="#services" class="btn btn--primary btn--lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+              サービスを見る
+            </a>
+            <a href="#contact" class="btn btn--outline-white btn--lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
               お問い合わせ
             </a>
-            <a href="#recruit" class="btn btn--outline-white btn--lg">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-              採用情報
-            </a>
+          </div>
+
+          <!-- ミニ実績バッジ -->
+          <div class="hero__badges fade-up" style="--delay:.4s">
+            <div class="hero__badge">
+              <span class="hero__badge-num">47</span>
+              <span class="hero__badge-text">年の実績</span>
+            </div>
+            <div class="hero__badge-sep" aria-hidden="true"></div>
+            <div class="hero__badge">
+              <span class="hero__badge-num">70</span>
+              <span class="hero__badge-text">名のプロ</span>
+            </div>
+            <div class="hero__badge-sep" aria-hidden="true"></div>
+            <div class="hero__badge">
+              <span class="hero__badge-num">50<small>台+</small></span>
+              <span class="hero__badge-text">保有車両</span>
+            </div>
+            <div class="hero__badge-sep" aria-hidden="true"></div>
+            <div class="hero__badge">
+              <span class="hero__badge-num">365</span>
+              <span class="hero__badge-text">日対応</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右側デコレーション: まるっとマーク -->
+        <div class="hero__deco" aria-hidden="true">
+          <div class="hero__deco-ring hero__deco-ring--outer"></div>
+          <div class="hero__deco-ring hero__deco-ring--inner"></div>
+          <div class="hero__deco-text">
+            <span>まるっと</span>
+            <span>おまかせ</span>
           </div>
         </div>
       </div>
+
       <div class="hero__scroll-hint" aria-hidden="true">
         <span>SCROLL</span>
         <div class="hero__scroll-line"></div>
@@ -146,88 +234,86 @@
     <div class="ticker" aria-hidden="true">
       <div class="ticker__inner">
         <div class="ticker__track">
-          <span>首都圏積み合わせ配送</span>
-          <span class="sep">—</span>
-          <span>オフィス移転丸ごとパック</span>
-          <span class="sep">—</span>
-          <span>産業廃棄物収集運搬</span>
-          <span class="sep">—</span>
-          <span>什器設置・施工</span>
-          <span class="sep">—</span>
-          <span>貨物・商品保管</span>
-          <span class="sep">—</span>
-          <span>請負業務</span>
-          <span class="sep">—</span>
-          <span>ドライバー募集中</span>
-          <span class="sep">—</span>
-          <span>首都圏積み合わせ配送</span>
-          <span class="sep">—</span>
-          <span>オフィス移転丸ごとパック</span>
-          <span class="sep">—</span>
-          <span>産業廃棄物収集運搬</span>
-          <span class="sep">—</span>
-          <span>什器設置・施工</span>
-          <span class="sep">—</span>
-          <span>貨物・商品保管</span>
-          <span class="sep">—</span>
-          <span>請負業務</span>
-          <span class="sep">—</span>
-          <span>ドライバー募集中</span>
-          <span class="sep">—</span>
+          <span>まるっと配送</span><span class="sep">●</span>
+          <span>まるっと人材</span><span class="sep">●</span>
+          <span>まるっと処分</span><span class="sep">●</span>
+          <span>まるっと清掃</span><span class="sep">●</span>
+          <span>まるっと買取</span><span class="sep">●</span>
+          <span>まるっとサポート</span><span class="sep">●</span>
+          <span>首都圏積み合わせ</span><span class="sep">●</span>
+          <span>オフィス移転</span><span class="sep">●</span>
+          <span>産業廃棄物収集運搬</span><span class="sep">●</span>
+          <span>ドライバー募集中</span><span class="sep">●</span>
+          <!-- 2周目（無限ループ） -->
+          <span>まるっと配送</span><span class="sep">●</span>
+          <span>まるっと人材</span><span class="sep">●</span>
+          <span>まるっと処分</span><span class="sep">●</span>
+          <span>まるっと清掃</span><span class="sep">●</span>
+          <span>まるっと買取</span><span class="sep">●</span>
+          <span>まるっとサポート</span><span class="sep">●</span>
+          <span>首都圏積み合わせ</span><span class="sep">●</span>
+          <span>オフィス移転</span><span class="sep">●</span>
+          <span>産業廃棄物収集運搬</span><span class="sep">●</span>
+          <span>ドライバー募集中</span><span class="sep">●</span>
         </div>
       </div>
     </div>
 
-    <!-- ========== REASON ========== -->
+    <!-- ========== REASON ==========
+         WP化時: page-home.php のループに組み込み
+    ========== -->
     <section class="section reason" id="reason" aria-labelledby="reason-heading">
       <div class="container">
         <div class="section__header fade-up">
           <p class="section__label">WHY YAMADA</p>
           <h2 class="section__title" id="reason-heading">選ばれる理由</h2>
-          <p class="section__lead">1977年の創業から積み上げてきた実績と信頼。<br>首都圏物流に特化したプロ集団が、貴社の課題に向き合います。</p>
+          <p class="section__lead">
+            1977年の創業から積み上げた実績と信頼。<br>
+            首都圏物流を知り尽くしたプロ集団が、貴社の課題に向き合います。
+          </p>
         </div>
         <div class="reason__grid">
           <article class="reason-card fade-up" style="--delay:.1s">
             <div class="reason-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2"/><path d="M24 12v12l8 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h3 class="reason-card__title">創業47年の実績と信頼</h3>
-            <p class="reason-card__text">1977年の創業以来、首都圏の法人物流を支え続けてきた豊富な実績。オフィスバスターズ・アート引越センターなど大手との取引が信頼の証です。</p>
+            <h3 class="reason-card__title">創業47年の<br>実績と信頼</h3>
+            <p class="reason-card__text">1977年創業以来、大手企業との安定取引を継続。オフィスバスターズ・アート引越センターほか10社以上の荷主と長期取引。実績が信頼の証です。</p>
           </article>
           <article class="reason-card fade-up" style="--delay:.2s">
             <div class="reason-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="20" width="36" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 28h36M14 20V14a4 4 0 014-4h12a4 4 0 014 4v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 48 48" fill="none"><path d="M6 36l10-24 8 14 6-10 8 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="38" cy="12" r="4" stroke="currentColor" stroke-width="2"/></svg>
             </div>
-            <h3 class="reason-card__title">首都圏特化の積み合わせ配送</h3>
-            <p class="reason-card__text">東京23区を中心とした首都圏の積み合わせ配送ネットワークに特化。複雑な中量ロットにも対応し、コスト削減と迅速な配送を両立します。</p>
+            <h3 class="reason-card__title">まるっと一括で<br>コスト削減</h3>
+            <p class="reason-card__text">配送・処分・人材・清掃を複数業者に分けて依頼すると手間と費用が倍増。山田運輸なら窓口一本化で管理コスト・作業コストをまるっと削減します。</p>
           </article>
           <article class="reason-card fade-up" style="--delay:.3s">
             <div class="reason-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4L6 16v24h36V16L24 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="18" y="30" width="12" height="14" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+              <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="18" width="32" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 26h32M16 18v-4a8 8 0 0116 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
             </div>
-            <h3 class="reason-card__title">ワンストップの総合物流</h3>
-            <p class="reason-card__text">輸送・保管・オフィス移転・什器設置・産業廃棄物収集まで。複数業者に依頼するコストと手間を削減し、窓口一本化で業務効率を向上します。</p>
+            <h3 class="reason-card__title">首都圏積み合わせ<br>配送ネットワーク</h3>
+            <p class="reason-card__text">東京23区を核とした首都圏積み合わせ配送に特化。中量ロットでも貸し切り不要でコスト最適化。定期便・スポット便どちらも柔軟対応します。</p>
           </article>
           <article class="reason-card fade-up" style="--delay:.4s">
             <div class="reason-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M12 24H8M40 24h-4M24 12V8M24 40v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l20 8v16c0 10-9 18-20 20C13 46 4 38 4 28V12l20-8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 24l6 6 10-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <h3 class="reason-card__title">365日対応の柔軟なサービス</h3>
-            <p class="reason-card__text">土日・祝日・年末年始も対応可能。急なオフィス移転や緊急配送にも迅速に対応します。スポット対応から定期契約まで、お客様のニーズに合わせます。</p>
+            <h3 class="reason-card__title">4都県の産廃<br>許可取得済み</h3>
+            <p class="reason-card__text">東京・千葉・埼玉・神奈川の産業廃棄物収集運搬業許可を完備。法令遵守のマニフェスト管理で、企業コンプライアンスを徹底サポートします。</p>
           </article>
           <article class="reason-card fade-up" style="--delay:.5s">
             <div class="reason-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 34l6-20 8 12 6-8 8 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 38h36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M24 12v12l8 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M12 24h-4M40 24h-4M24 12V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
             </div>
-            <h3 class="reason-card__title">コスト合理化の実現</h3>
-            <p class="reason-card__text">積み合わせ配送の仕組みを最大限活用し、貸し切り不要で費用を大幅削減。倉庫保管と配送を一括管理することで、物流コストの最適化を実現します。</p>
+            <h3 class="reason-card__title">365日対応の<br>スピード感</h3>
+            <p class="reason-card__text">土日・祝日・年末年始も稼働。急なオフィス移転・緊急配送にも即対応。スポットから長期契約まで、お客様のペースに合わせた柔軟なサービスを提供します。</p>
           </article>
           <article class="reason-card fade-up" style="--delay:.6s">
             <div class="reason-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4l5 15h15l-12 9 5 15-13-10-13 10 5-15L4 19h15z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 48 48" fill="none"><path d="M8 40V20l16-12 16 12v20H8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="18" y="28" width="12" height="12" rx="1" stroke="currentColor" stroke-width="2"/><path d="M20 28v-4a4 4 0 018 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
             </div>
-            <h3 class="reason-card__title">安全・コンプライアンスの徹底</h3>
-            <p class="reason-card__text">産業廃棄物収集運搬業許可（東京・千葉・埼玉・神奈川）を取得。法令遵守と安全管理を徹底し、環境負荷低減にも積極的に取り組んでいます。</p>
+            <h3 class="reason-card__title">春日部倉庫での<br>保管・管理</h3>
+            <p class="reason-card__text">本社敷地内の春日部倉庫で貨物・商品の保管から出荷まで一括管理。配送と倉庫を一体運用するため、在庫管理の手間とコストを大幅に削減できます。</p>
           </article>
         </div>
       </div>
@@ -235,7 +321,7 @@
 
     <!-- ========== STATS ========== -->
     <section class="stats" id="stats" aria-label="数字で見る山田運輸">
-      <div class="stats__bg"></div>
+      <div class="stats__bg" aria-hidden="true"></div>
       <div class="container">
         <div class="section__header section__header--light fade-up">
           <p class="section__label">NUMBERS</p>
@@ -261,7 +347,7 @@
           <div class="stat-item fade-up" style="--delay:.3s">
             <div class="stat-item__num">
               <span class="stat-count" data-target="50">0</span>
-              <span class="stat-item__unit">台以上</span>
+              <span class="stat-item__unit">台+</span>
             </div>
             <p class="stat-item__label">保有車両</p>
             <p class="stat-item__sub">2t×20台 / 4t×30台</p>
@@ -285,7 +371,7 @@
           <div class="stat-item fade-up" style="--delay:.6s">
             <div class="stat-item__num">
               <span class="stat-count" data-target="10">0</span>
-              <span class="stat-item__unit">社以上</span>
+              <span class="stat-item__unit">社+</span>
             </div>
             <p class="stat-item__label">主要取引先</p>
             <p class="stat-item__sub">大手企業との安定取引</p>
@@ -294,149 +380,257 @@
       </div>
     </section>
 
-    <!-- ========== SERVICES ========== -->
+    <!-- ========== MARUTTO SERIES ==========
+         WP化時: カスタム投稿タイプ「marutto_service」で管理
+         各カードのタイトル・説明文・カラーをACFで設定予定
+    ========== -->
     <section class="section services" id="services" aria-labelledby="services-heading">
       <div class="container">
         <div class="section__header fade-up">
           <p class="section__label">SERVICES</p>
-          <h2 class="section__title" id="services-heading">サービス一覧</h2>
-          <p class="section__lead">山田運輸の多彩な物流サービスで、<br>貴社のあらゆる課題を解決します。</p>
+          <h2 class="section__title" id="services-heading">まるっとシリーズ</h2>
+          <p class="section__lead">
+            配送から処分・清掃・買取・人材まで。<br>
+            企業の物流まわりの困りごとを、まるっとひとつの窓口で解決します。
+          </p>
         </div>
-        <div class="services__grid">
 
-          <article class="svc-card svc-card--featured fade-up" id="svc-transport" style="--delay:.1s">
-            <div class="svc-card__inner">
-              <div class="svc-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none"><rect x="4" y="32" width="40" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M44 40h8l8 8v2h-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="14" cy="52" r="4" stroke="currentColor" stroke-width="2"/><circle cx="50" cy="52" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 36V28h8l8-10h20v22" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <!-- まるっとシリーズ ロゴバナー（CSS表現） -->
+        <div class="marutto-banner fade-up">
+          <div class="marutto-banner__inner" aria-hidden="true">
+            <div class="marutto-banner__arc"></div>
+            <div class="marutto-banner__logo">
+              <span class="marutto-banner__pre">YAMADA</span>
+              <span class="marutto-banner__main">まるっと</span>
+              <span class="marutto-banner__sub">シリーズ</span>
+            </div>
+            <div class="marutto-banner__tagline">企業の物流課題をまるっと一括解決</div>
+          </div>
+        </div>
+
+        <!-- サービスカードグリッド -->
+        <!-- WP化時: WP_Query で marutto_service 投稿をループ -->
+        <div class="marutto__grid">
+
+          <!-- まるっと配送 -->
+          <article class="marutto-card fade-up" id="svc-delivery"
+            data-color="blue" style="--delay:.1s">
+            <div class="marutto-card__top">
+              <div class="marutto-card__arc-wrap" aria-hidden="true">
+                <svg class="marutto-card__arc-svg" width="100%" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M10 50 Q100 -10 190 50" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
               </div>
-              <div class="svc-card__badge">主力サービス</div>
-              <h3 class="svc-card__title">首都圏<br>積み合わせ配送</h3>
-              <p class="svc-card__en">Metropolitan Joint Delivery</p>
-              <p class="svc-card__text">東京23区を中心とした首都圏エリアの積み合わせ配送ネットワーク。貸し切り不要で中量ロットの輸送コストを大幅削減。定期配送から臨時便まで、柔軟に対応します。</p>
-              <ul class="svc-card__list">
-                <li>東京23区・首都圏全域対応</li>
-                <li>2t・4t・大型対応</li>
-                <li>定期便・スポット便</li>
+              <div class="marutto-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><rect x="2" y="22" width="30" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M32 28h6l8 8v2h-4" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="10" cy="40" r="3.5" stroke="currentColor" stroke-width="2"/><circle cx="38" cy="40" r="3.5" stroke="currentColor" stroke-width="2"/><path d="M2 26v-6h6l8-8h16v16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              </div>
+              <p class="marutto-card__prefix">まるっと</p>
+              <h3 class="marutto-card__name">配送</h3>
+            </div>
+            <div class="marutto-card__body">
+              <p class="marutto-card__text">
+                首都圏の積み合わせ配送から企業物流まで、確実で柔軟な配送を支援します。
+              </p>
+              <ul class="marutto-card__list">
+                <li>東京23区・首都圏全域</li>
+                <li>2t・4t・スポット対応</li>
+                <li>定期便・緊急便</li>
               </ul>
-              <a href="https://yamadaunyu.co.jp/service" class="svc-card__link" target="_blank" rel="noopener">詳細を見る <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+              <a href="https://yamadaunyu.co.jp/service" class="marutto-card__btn" target="_blank" rel="noopener">
+                詳しく見る
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
             </div>
           </article>
 
-          <article class="svc-card fade-up" id="svc-office" style="--delay:.2s">
-            <div class="svc-card__inner">
-              <div class="svc-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="8" width="48" height="48" rx="2" stroke="currentColor" stroke-width="2"/><path d="M24 56V32h16v24" stroke="currentColor" stroke-width="2"/><path d="M8 28h48" stroke="currentColor" stroke-width="2"/><path d="M16 18h4M16 23h4M44 18h4M44 23h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <!-- まるっと人材 -->
+          <article class="marutto-card fade-up" id="svc-hr"
+            data-color="green" style="--delay:.2s">
+            <div class="marutto-card__top">
+              <div class="marutto-card__arc-wrap" aria-hidden="true">
+                <svg class="marutto-card__arc-svg" width="100%" height="60" viewBox="0 0 200 60" fill="none" aria-hidden="true">
+                  <path d="M10 50 Q100 -10 190 50" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
               </div>
-              <h3 class="svc-card__title">オフィス移転<br>丸ごとパック</h3>
-              <p class="svc-card__en">Office Relocation</p>
-              <p class="svc-card__text">荷造り・輸送・什器設置・不用品処分まで一括対応。専任スタッフが計画から当日まで丁寧にサポートし、業務ダウンタイムを最小化します。</p>
-              <ul class="svc-card__list">
-                <li>計画立案から当日まで一括</li>
-                <li>什器・OA機器の設置含む</li>
-                <li>廃棄物処理も対応</li>
+              <div class="marutto-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="18" cy="14" r="7" stroke="currentColor" stroke-width="2"/><path d="M4 42v-3a10 10 0 0110-10h8a10 10 0 0110 10v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="36" cy="16" r="5" stroke="currentColor" stroke-width="2"/><path d="M42 40v-2a7 7 0 00-6-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <p class="marutto-card__prefix">まるっと</p>
+              <h3 class="marutto-card__name">人材</h3>
+            </div>
+            <div class="marutto-card__body">
+              <p class="marutto-card__text">
+                物流現場・オフィス移転・作業請負に必要な人材手配をサポートします。
+              </p>
+              <ul class="marutto-card__list">
+                <li>引越・移転作業スタッフ</li>
+                <li>倉庫内ピッキング人材</li>
+                <li>短期・長期どちらも対応</li>
               </ul>
-              <a href="https://yamadaunyu.co.jp/service/office" class="svc-card__link" target="_blank" rel="noopener">詳細を見る <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+              <a href="https://yamadaunyu.co.jp/service" class="marutto-card__btn" target="_blank" rel="noopener">
+                詳しく見る
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
             </div>
           </article>
 
-          <article class="svc-card fade-up" id="svc-waste" style="--delay:.3s">
-            <div class="svc-card__inner">
-              <div class="svc-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none"><path d="M12 20h40l-4 34H16L12 20z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 20h48M24 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M26 28v18M32 28v18M38 28v18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <!-- まるっと処分 -->
+          <article class="marutto-card fade-up" id="svc-disposal"
+            data-color="orange" style="--delay:.3s">
+            <div class="marutto-card__top">
+              <div class="marutto-card__arc-wrap" aria-hidden="true">
+                <svg class="marutto-card__arc-svg" width="100%" height="60" viewBox="0 0 200 60" fill="none" aria-hidden="true">
+                  <path d="M10 50 Q100 -10 190 50" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
               </div>
-              <h3 class="svc-card__title">産業廃棄物<br>収集運搬業</h3>
-              <p class="svc-card__en">Industrial Waste Transport</p>
-              <p class="svc-card__text">東京・千葉・埼玉・神奈川の4都県で産業廃棄物収集運搬業許可を取得。法令を遵守した安全な廃棄物処理で、企業のコンプライアンスをサポートします。</p>
-              <ul class="svc-card__list">
-                <li>4都県の許可取得済</li>
-                <li>法令遵守の安全処理</li>
+              <div class="marutto-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M10 18h28l-3 24H13L10 18z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 18h36M18 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 26v10M24 26v10M28 26v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <p class="marutto-card__prefix">まるっと</p>
+              <h3 class="marutto-card__name">処分</h3>
+            </div>
+            <div class="marutto-card__body">
+              <p class="marutto-card__text">
+                不要品・什器・産業廃棄物の回収や処分までまとめて対応します。
+              </p>
+              <ul class="marutto-card__list">
+                <li>4都県の産廃許可取得済</li>
+                <li>什器・備品の一括撤去</li>
                 <li>マニフェスト管理対応</li>
               </ul>
-              <a href="https://yamadaunyu.co.jp/service/industry" class="svc-card__link" target="_blank" rel="noopener">詳細を見る <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+              <a href="https://yamadaunyu.co.jp/service/industry" class="marutto-card__btn" target="_blank" rel="noopener">
+                詳しく見る
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
             </div>
           </article>
 
-          <article class="svc-card fade-up" id="svc-fixture" style="--delay:.4s">
-            <div class="svc-card__inner">
-              <div class="svc-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none"><rect x="16" y="8" width="32" height="48" rx="2" stroke="currentColor" stroke-width="2"/><path d="M24 20h16M24 28h16M24 36h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 48l8-8 8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <!-- まるっと清掃 -->
+          <article class="marutto-card fade-up" id="svc-cleaning"
+            data-color="teal" style="--delay:.4s">
+            <div class="marutto-card__top">
+              <div class="marutto-card__arc-wrap" aria-hidden="true">
+                <svg class="marutto-card__arc-svg" width="100%" height="60" viewBox="0 0 200 60" fill="none" aria-hidden="true">
+                  <path d="M10 50 Q100 -10 190 50" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
               </div>
-              <h3 class="svc-card__title">什器の設置<br>搬入・組立</h3>
-              <p class="svc-card__en">Furniture Installation</p>
-              <p class="svc-card__text">オフィス家具・棚・金庫・OA機器などの搬入・設置・組立に対応。経験豊富なスタッフが丁寧に作業し、納品後もすぐに使える状態でお渡しします。</p>
-              <ul class="svc-card__list">
-                <li>金庫・重量物の搬入</li>
-                <li>OA機器・家具の組立</li>
-                <li>設置後のレイアウト調整</li>
-              </ul>
-              <a href="https://yamadaunyu.co.jp/service/delivery" class="svc-card__link" target="_blank" rel="noopener">詳細を見る <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-            </div>
-          </article>
-
-          <article class="svc-card fade-up" id="svc-storage" style="--delay:.5s">
-            <div class="svc-card__inner">
-              <div class="svc-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none"><rect x="4" y="24" width="56" height="32" rx="2" stroke="currentColor" stroke-width="2"/><path d="M4 32h56M20 32v24M44 32v24" stroke="currentColor" stroke-width="2"/><path d="M16 8h32l8 16H8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              <div class="marutto-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M14 34c0-8 6-20 18-26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 40h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="16" r="8" stroke="currentColor" stroke-width="2"/><path d="M30 12l4 8-6 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </div>
-              <h3 class="svc-card__title">貨物・商品保管<br>倉庫サービス</h3>
-              <p class="svc-card__en">Cargo & Storage</p>
-              <p class="svc-card__text">春日部の本社倉庫にて、貨物・商品の保管・管理・発送を一括対応。在庫管理から出庫まで、物流業務のアウトソーシングにお役立てください。</p>
-              <ul class="svc-card__list">
-                <li>春日部倉庫での保管</li>
-                <li>在庫管理・出荷対応</li>
-                <li>定期発送まで一括委託</li>
+              <p class="marutto-card__prefix">まるっと</p>
+              <h3 class="marutto-card__name">清掃</h3>
+            </div>
+            <div class="marutto-card__body">
+              <p class="marutto-card__text">
+                オフィス・倉庫・施設の清掃を、移転や作業と合わせて対応します。
+              </p>
+              <ul class="marutto-card__list">
+                <li>移転後・退去前クリーニング</li>
+                <li>倉庫・施設の定期清掃</li>
+                <li>移転作業とセット割引</li>
               </ul>
-              <a href="https://yamadaunyu.co.jp/service/cargo" class="svc-card__link" target="_blank" rel="noopener">詳細を見る <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+              <a href="https://yamadaunyu.co.jp/service" class="marutto-card__btn" target="_blank" rel="noopener">
+                詳しく見る
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
             </div>
           </article>
 
-          <article class="svc-card fade-up" id="svc-contract" style="--delay:.6s">
-            <div class="svc-card__inner">
-              <div class="svc-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none"><path d="M16 8h32v48H16V8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 20h16M24 28h16M24 36h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M40 48l6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <!-- まるっと買取 -->
+          <article class="marutto-card fade-up" id="svc-purchase"
+            data-color="purple" style="--delay:.5s">
+            <div class="marutto-card__top">
+              <div class="marutto-card__arc-wrap" aria-hidden="true">
+                <svg class="marutto-card__arc-svg" width="100%" height="60" viewBox="0 0 200 60" fill="none" aria-hidden="true">
+                  <path d="M10 50 Q100 -10 190 50" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
               </div>
-              <h3 class="svc-card__title">請負業務<br>物流アウトソース</h3>
-              <p class="svc-card__en">Outsourcing / Contract</p>
-              <p class="svc-card__text">配送センターの運営代行・ピッキング・検品・梱包など、物流業務全般を請負対応。コア業務に集中できる環境を整えるお手伝いをいたします。</p>
-              <ul class="svc-card__list">
-                <li>センター運営代行</li>
-                <li>ピッキング・検品・梱包</li>
-                <li>長期安定契約対応</li>
+              <div class="marutto-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="12" width="36" height="26" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 12v-2a4 4 0 018 0v2M28 28h-8M24 24v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="28" r="6" stroke="currentColor" stroke-width="2"/></svg>
+              </div>
+              <p class="marutto-card__prefix">まるっと</p>
+              <h3 class="marutto-card__name">買取</h3>
+            </div>
+            <div class="marutto-card__body">
+              <p class="marutto-card__text">
+                不要になった什器・備品・設備を査定し、資産活用まで支援します。
+              </p>
+              <ul class="marutto-card__list">
+                <li>オフィス家具・OA機器</li>
+                <li>工場・倉庫設備</li>
+                <li>撤去と買取を同時対応</li>
               </ul>
-              <a href="https://yamadaunyu.co.jp/service/contract" class="svc-card__link" target="_blank" rel="noopener">詳細を見る <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+              <a href="https://yamadaunyu.co.jp/service" class="marutto-card__btn" target="_blank" rel="noopener">
+                詳しく見る
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
             </div>
           </article>
 
-        </div>
+          <!-- まるっとサポート -->
+          <article class="marutto-card fade-up" id="svc-support"
+            data-color="gray" style="--delay:.6s">
+            <div class="marutto-card__top">
+              <div class="marutto-card__arc-wrap" aria-hidden="true">
+                <svg class="marutto-card__arc-svg" width="100%" height="60" viewBox="0 0 200 60" fill="none" aria-hidden="true">
+                  <path d="M10 50 Q100 -10 190 50" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="marutto-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l8 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M14 36l4-4M34 36l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <p class="marutto-card__prefix">まるっと</p>
+              <h3 class="marutto-card__name">サポート</h3>
+            </div>
+            <div class="marutto-card__body">
+              <p class="marutto-card__text">
+                配送だけでなく、保管・設置・移転・作業まで企業の困りごとを一括で支援します。
+              </p>
+              <ul class="marutto-card__list">
+                <li>倉庫保管・在庫管理</li>
+                <li>什器設置・組立</li>
+                <li>オフィス移転丸ごとパック</li>
+              </ul>
+              <a href="https://yamadaunyu.co.jp/service" class="marutto-card__btn" target="_blank" rel="noopener">
+                詳しく見る
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /.marutto__grid -->
 
         <div class="services__cta fade-up">
           <a href="https://yamadaunyu.co.jp/service" class="btn btn--primary btn--lg" target="_blank" rel="noopener">すべてのサービスを見る</a>
+          <a href="#contact" class="btn btn--outline-navy btn--lg">まとめて相談する</a>
         </div>
       </div>
     </section>
 
-    <!-- ========== SAFETY ========== -->
+    <!-- ========== SAFETY ==========
+         WP化時: page-safety.php に対応、固定ページの本文を出力
+    ========== -->
     <section class="safety" id="safety" aria-labelledby="safety-heading">
-      <div class="safety__img-wrap">
-        <img src="https://yamadaunyu.co.jp/wp-content/uploads/2025/05/yamada_fv-4.jpg"
-             alt="山田運輸の安全管理された車両と作業員"
-             class="safety__img"
-             loading="lazy">
-        <div class="safety__overlay"></div>
+      <div class="safety__bg" aria-hidden="true">
+        <div class="safety__bg-gradient"></div>
+        <div class="safety__bg-pattern"></div>
       </div>
       <div class="container">
         <div class="safety__content fade-up">
           <p class="section__label section__label--white">SAFETY FIRST</p>
           <h2 class="safety__title" id="safety-heading">安全への<br>取り組み</h2>
-          <p class="safety__lead">お客様の大切な荷物と、働くドライバーを守るために。<br>山田運輸は安全管理を最優先に取り組んでいます。</p>
+          <p class="safety__lead">
+            お客様の大切な荷物と、働くドライバーを守るために。<br>
+            山田運輸は安全管理を最優先に取り組んでいます。
+          </p>
           <div class="safety__items">
             <div class="safety__item">
               <div class="safety__item-icon" aria-hidden="true">
                 <svg viewBox="0 0 40 40" fill="none"><path d="M20 4L6 10v12c0 7.7 6 14.9 14 17 8-2.1 14-9.3 14-17V10L20 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </div>
               <div>
-                <h3 class="safety__item-title">ドライブレコーダー全車搭載</h3>
-                <p class="safety__item-text">全車両にドライブレコーダー・バックカメラ・ETCを装備。映像データを活用した定期的な安全教育を実施しています。</p>
+                <h3 class="safety__item-title">全車ドラレコ・バックカメラ搭載</h3>
+                <p class="safety__item-text">映像データを活用した定期安全教育を実施。ETCも全車完備し、安全で効率的な運行を支援します。</p>
               </div>
             </div>
             <div class="safety__item">
@@ -444,8 +638,8 @@
                 <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="2"/><path d="M20 10v10l6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
               </div>
               <div>
-                <h3 class="safety__item-title">定期安全研修・教育</h3>
-                <p class="safety__item-text">定期的な安全運転研修・法令教育を実施。事故ゼロを目標に、ドライバー全員が高い安全意識を持って業務に臨んでいます。</p>
+                <h3 class="safety__item-title">定期安全研修・法令教育</h3>
+                <p class="safety__item-text">全ドライバーを対象とした定期研修を実施。事故ゼロを目標に、高い安全意識を組織全体で維持します。</p>
               </div>
             </div>
             <div class="safety__item">
@@ -453,17 +647,17 @@
                 <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="6" width="24" height="28" rx="2" stroke="currentColor" stroke-width="2"/><path d="M14 14h12M14 20h12M14 26h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
               </div>
               <div>
-                <h3 class="safety__item-title">産廃許可の法令遵守</h3>
-                <p class="safety__item-text">東京・千葉・埼玉・神奈川の4都県で産業廃棄物収集運搬業許可を取得。マニフェスト管理など、法令を徹底遵守した廃棄物処理を行っています。</p>
+                <h3 class="safety__item-title">産廃許可・法令完全遵守</h3>
+                <p class="safety__item-text">4都県の産業廃棄物収集運搬業許可を取得。マニフェスト管理を徹底し、法令を遵守した廃棄物処理を行います。</p>
               </div>
             </div>
             <div class="safety__item">
               <div class="safety__item-icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none"><path d="M20 4l16 6v14c0 8-7 14-16 16C11 38 4 32 4 24V10l16-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                <svg viewBox="0 0 40 40" fill="none"><path d="M8 16h10v18H8zM22 8h10v26H22z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 34h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
               </div>
               <div>
-                <h3 class="safety__item-title">車両の定期点検・整備</h3>
-                <p class="safety__item-text">保有全車両の定期点検・整備を徹底実施。安全で状態の良い車両でお客様の荷物をお届けします。</p>
+                <h3 class="safety__item-title">車両の定期点検・整備徹底</h3>
+                <p class="safety__item-text">全保有車両の定期点検・整備を欠かしません。安全で状態の良い車両でお客様の荷物を責任を持ってお届けします。</p>
               </div>
             </div>
           </div>
@@ -478,18 +672,17 @@
         <div class="section__header fade-up">
           <p class="section__label">SERVICE AREA</p>
           <h2 class="section__title" id="area-heading">対応エリア</h2>
-          <p class="section__lead">埼玉・春日部を拠点に、首都圏全域をカバー。<br>産業廃棄物収集運搬は4都県の許可を取得しています。</p>
+          <p class="section__lead">
+            埼玉・春日部を拠点に、首都圏全域をカバー。<br>産業廃棄物収集運搬は4都県の許可を取得しています。
+          </p>
         </div>
         <div class="area__inner">
           <div class="area__map fade-up">
-            <div class="area__map-inner">
+            <div class="area__map-frame">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12917.325354315843!2d139.745711!3d35.963324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018becf148244cf%3A0x27845bc3ca0a63bd!2z5pel5pys44CB44CSMzQ0LTAwMzgg5Z-8546J55yM5pil5pel6YOo5biC5aSn5rK877yX5LiB55uu77yU77yX4oiS77yV77yQIOelnueUsOWAieW6q--8o-ajnw!5e0!3m2!1sja!2sus!4v1747132207685!5m2!1sja!2sus"
-                width="100%"
-                height="400"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
+                width="100%" height="100%"
+                style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 title="山田運輸有限会社 所在地マップ">
               </iframe>
@@ -498,7 +691,7 @@
           <div class="area__info fade-up" style="--delay:.2s">
             <div class="area__card">
               <h3 class="area__card-title">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16,8 20,8 23,11 23,16 16,16 16,8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16,8 20,8 23,11 23,16 16,16 16,8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                 積み合わせ配送エリア
               </h3>
               <ul class="area__list">
@@ -510,7 +703,7 @@
             </div>
             <div class="area__card">
               <h3 class="area__card-title">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
                 産廃収集運搬 許可エリア
               </h3>
               <ul class="area__list">
@@ -520,15 +713,16 @@
                 <li>神奈川県 <span class="area__permit">許可番号 01400184788</span></li>
               </ul>
             </div>
-            <div class="area__card">
+            <div class="area__card area__card--accent">
               <h3 class="area__card-title">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                拠点
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                本社・倉庫
               </h3>
               <address class="area__address">
                 〒344-0038<br>
                 埼玉県春日部市大沼7-50<br>
-                （本社事務所・春日部倉庫）
+                （本社事務所・春日部倉庫）<br>
+                <a href="tel:0488789116">TEL: 048-878-9116</a>
               </address>
             </div>
           </div>
@@ -536,7 +730,11 @@
       </div>
     </section>
 
-    <!-- ========== COMPANY ========== -->
+    <!-- ========== COMPANY ==========
+         WP化時: company.php テンプレートに分割
+         代表者挨拶: 固定ページ「会社案内」の本文から出力
+         概要テーブル: ACF カスタムフィールドで管理予定
+    ========== -->
     <section class="section company" id="company" aria-labelledby="company-heading">
       <div class="container">
         <div class="section__header fade-up">
@@ -546,10 +744,18 @@
         <div class="company__inner">
           <div class="company__message fade-up">
             <p class="company__message-label">代表者挨拶</p>
-            <h3 class="company__message-title">首都圏物流の<br>ナンバーワンを目指して</h3>
-            <p class="company__message-text">現代社会はグローバル化やテクノロジーの進展により、日々めまぐるしく変化しています。物流業界もその例外ではなく、効率化・高品質化・コスト最適化のすべてが求められる時代となっています。</p>
-            <p class="company__message-text">そうした環境下において、当社は一般運送をはじめ、個人様の引越し、オフィス移転、関連施工サービス、さらには倉庫業務まで、幅広いサービスをワンストップでご提供できる体制を築いてきました。</p>
-            <p class="company__message-text">私たちは、単なる「運ぶ会社」ではなく、お客様の課題解決を共に考えるパートナーでありたいと考えております。</p>
+            <h3 class="company__message-title">
+              首都圏物流の<br>ナンバーワンを目指して
+            </h3>
+            <p class="company__message-text">
+              現代社会はグローバル化やテクノロジーの進展により、日々めまぐるしく変化しています。物流業界もその例外ではなく、効率化・高品質化・コスト最適化のすべてが求められる時代となっています。
+            </p>
+            <p class="company__message-text">
+              そうした環境下において、当社は一般運送をはじめ、個人様の引越し、オフィス移転、関連施工サービス、さらには倉庫業務まで、幅広いサービスをワンストップでご提供できる体制を築いてきました。
+            </p>
+            <p class="company__message-text">
+              私たちは、単なる「運ぶ会社」ではなく、お客様の課題解決を共に考えるパートナーでありたいと考えております。
+            </p>
             <p class="company__message-name">代表取締役　<strong>山田 恭輔</strong></p>
           </div>
           <div class="company__profile fade-up" style="--delay:.2s">
@@ -575,7 +781,9 @@
       </div>
     </section>
 
-    <!-- ========== VOICE / FAQ ========== -->
+    <!-- ========== FAQ ==========
+         WP化時: カスタム投稿タイプ「faq」でループ管理
+    ========== -->
     <section class="section faq" id="faq" aria-labelledby="faq-heading">
       <div class="container">
         <div class="section__header fade-up">
@@ -586,79 +794,83 @@
           <details class="faq__item">
             <summary class="faq__q">
               <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-              積み合わせ配送はどのくらいから依頼できますか？
+              積み合わせ配送はどのくらいの量から依頼できますか？
               <svg class="faq__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </summary>
-            <div class="faq__a">1個口の小口配送から対応可能です。貸し切りを必要としない積み合わせ配送の仕組みを活用することで、少量でもコストを抑えてお届けできます。まずはお気軽にお問い合わせください。</div>
+            <div class="faq__a">1個口の小口配送から対応可能です。積み合わせ配送の仕組みにより、少量でもコストを抑えてお届けできます。まずはお気軽にご相談ください。</div>
           </details>
           <details class="faq__item">
             <summary class="faq__q">
               <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-              オフィス移転の場合、土日や祝日の対応は可能ですか？
+              土日・祝日のオフィス移転に対応できますか？
               <svg class="faq__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </summary>
-            <div class="faq__a">はい、対応可能です。土日・祝日・年末年始を含む365日対応しております。業務ダウンタイムを最小限に抑えるため、週末や深夜作業のご要望にも積極的にお応えします。</div>
+            <div class="faq__a">はい、365日対応しています。土日・祝日・年末年始も稼働しており、業務ダウンタイムを最小化したいお客様のご要望に積極的にお応えします。</div>
           </details>
           <details class="faq__item">
             <summary class="faq__q">
               <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-              産業廃棄物の収集運搬はどのエリアで対応していますか？
+              まるっとシリーズは複数同時に依頼できますか？
               <svg class="faq__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </summary>
-            <div class="faq__a">東京都・千葉県・埼玉県・神奈川県の4都県で産業廃棄物収集運搬業の許可を取得しています。マニフェスト管理にも対応しており、法令を遵守した安全な廃棄物処理をご提供します。</div>
+            <div class="faq__a">はい、例えば「オフィス移転＋処分＋清掃＋買取」をまとめてご依頼いただけます。窓口を一本化することでコスト削減と段取りの簡素化が実現します。</div>
           </details>
           <details class="faq__item">
             <summary class="faq__q">
               <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-              倉庫保管と配送を同時に依頼することはできますか？
+              産業廃棄物はどのエリアで対応していますか？
               <svg class="faq__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </summary>
-            <div class="faq__a">はい、春日部倉庫での保管から出庫・配送まで一括でご依頼いただけます。在庫管理・ピッキング・梱包・発送をワンストップで対応し、物流業務のアウトソーシングをサポートします。</div>
+            <div class="faq__a">東京都・千葉県・埼玉県・神奈川県の4都県で産業廃棄物収集運搬業の許可を取得しています。マニフェスト管理にも対応し、法令遵守の廃棄物処理をご提供します。</div>
           </details>
           <details class="faq__item">
             <summary class="faq__q">
               <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-              スポット対応（単発依頼）は受け付けていますか？
+              倉庫保管と配送を一緒に依頼できますか？
               <svg class="faq__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </summary>
-            <div class="faq__a">もちろん対応しています。定期契約だけでなく、急な単発配送・移転作業のスポット依頼も歓迎しています。まずはお電話またはお問い合わせフォームからご相談ください。</div>
+            <div class="faq__a">はい、春日部倉庫での保管から出庫・配送まで一括対応します。在庫管理・ピッキング・梱包・発送までのアウトソーシングをお任せください。</div>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- ========== RECRUIT ========== -->
+    <!-- ========== RECRUIT ==========
+         WP化時: recruit.php テンプレートに分割、ACFで募集内容管理
+    ========== -->
     <section class="recruit" id="recruit" aria-labelledby="recruit-heading">
-      <div class="recruit__bg">
-        <img src="https://yamadaunyu.co.jp/wp-content/uploads/2025/05/image-14.png"
-             alt="山田運輸のドライバー"
-             class="recruit__bg-img"
-             loading="lazy">
-        <div class="recruit__overlay"></div>
+      <div class="recruit__bg" aria-hidden="true">
+        <div class="recruit__bg-shape recruit__bg-shape--1"></div>
+        <div class="recruit__bg-shape recruit__bg-shape--2"></div>
+        <div class="recruit__bg-dots"></div>
       </div>
       <div class="container">
         <div class="recruit__content fade-up">
           <p class="section__label section__label--white">RECRUIT</p>
           <h2 class="recruit__title" id="recruit-heading">
             山田運輸で、<br>
-            <span>あなたのキャリアを築こう。</span>
+            <em>あなたのキャリアを築こう。</em>
           </h2>
-          <p class="recruit__lead">ドライバー募集中。<br>「働き方改革」を推進し、充実した気持ちのいい働き方を実現します。<br>未経験の方も大歓迎。私たちと一緒に首都圏の物流を支えませんか。</p>
+          <p class="recruit__lead">
+            ドライバー募集中。<br>
+            「働き方改革」を推進し、充実した気持ちのいい働き方を実現します。<br>
+            未経験の方も大歓迎。一緒に首都圏の物流を支えませんか。
+          </p>
           <div class="recruit__points">
             <div class="recruit__point">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
               <span>週休2日制・有給消化推進</span>
             </div>
             <div class="recruit__point">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
               <span>未経験・第二新卒歓迎</span>
             </div>
             <div class="recruit__point">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
-              <span>大型免許取得支援</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
+              <span>大型免許取得支援あり</span>
             </div>
             <div class="recruit__point">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20,6 9,17 4,12"/></svg>
               <span>安全教育・研修制度充実</span>
             </div>
           </div>
@@ -670,81 +882,103 @@
       </div>
     </section>
 
-    <!-- ========== CONTACT ========== -->
+    <!-- ========== CONTACT ==========
+         WP化時: Contact Form 7 または WPForms を使用予定
+         フォームショートコードをここに挿入
+    ========== -->
     <section class="section contact" id="contact" aria-labelledby="contact-heading">
       <div class="container">
         <div class="section__header fade-up">
           <p class="section__label">CONTACT</p>
           <h2 class="section__title" id="contact-heading">お問い合わせ</h2>
-          <p class="section__lead">物流に関するご相談・お見積りは、お気軽にお問い合わせください。<br>担当者が迅速にご対応いたします。</p>
+          <p class="section__lead">
+            物流に関するご相談・お見積りは、お気軽にお問い合わせください。<br>
+            担当者が迅速にご対応いたします。
+          </p>
         </div>
         <div class="contact__inner">
           <div class="contact__tel-box fade-up">
             <p class="contact__tel-label">お電話でのお問い合わせ</p>
             <a href="tel:0488789116" class="contact__tel-num" aria-label="電話番号 048-878-9116">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14v2.92z"/></svg>
               048-878-9116
             </a>
-            <p class="contact__tel-note">受付時間：平日 8:00〜18:00（土日祝はお問い合わせフォームをご利用ください）</p>
+            <p class="contact__tel-note">受付時間：平日 8:00〜18:00<br>（土日祝はフォームをご利用ください）</p>
+            <div class="contact__tel-services">
+              <p class="contact__tel-services-label">まるっとシリーズ 一括相談受付中</p>
+              <div class="contact__tel-tags">
+                <span>配送</span><span>人材</span><span>処分</span>
+                <span>清掃</span><span>買取</span><span>サポート</span>
+              </div>
+            </div>
           </div>
           <div class="contact__form-box fade-up" style="--delay:.2s">
             <p class="contact__form-label">フォームでのお問い合わせ</p>
+            <!-- WP化時: [contact-form-7 id="xxx"] に置換 -->
             <form class="contact-form" id="contactForm" novalidate>
               <div class="form-row">
                 <div class="form-group">
-                  <label class="form-label" for="company">会社名 <span class="required" aria-label="必須">必須</span></label>
-                  <input class="form-input" type="text" id="company" name="company" placeholder="例：株式会社山田商事" required autocomplete="organization">
+                  <label class="form-label" for="company">会社名 <span class="required">必須</span></label>
+                  <input class="form-input" type="text" id="company" name="company"
+                    placeholder="例：株式会社〇〇商事" required autocomplete="organization">
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="name">お名前 <span class="required" aria-label="必須">必須</span></label>
-                  <input class="form-input" type="text" id="name" name="name" placeholder="例：山田 太郎" required autocomplete="name">
+                  <label class="form-label" for="name">お名前 <span class="required">必須</span></label>
+                  <input class="form-input" type="text" id="name" name="name"
+                    placeholder="例：山田 太郎" required autocomplete="name">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label class="form-label" for="email">メールアドレス <span class="required" aria-label="必須">必須</span></label>
-                  <input class="form-input" type="email" id="email" name="email" placeholder="例：info@example.com" required autocomplete="email">
+                  <label class="form-label" for="email">メールアドレス <span class="required">必須</span></label>
+                  <input class="form-input" type="email" id="email" name="email"
+                    placeholder="例：info@example.com" required autocomplete="email">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="tel">電話番号</label>
-                  <input class="form-input" type="tel" id="tel" name="tel" placeholder="例：048-878-9116" autocomplete="tel">
+                  <input class="form-input" type="tel" id="tel" name="tel"
+                    placeholder="例：048-878-9116" autocomplete="tel">
                 </div>
               </div>
               <div class="form-group">
                 <label class="form-label" for="service">ご相談のサービス</label>
                 <select class="form-select" id="service" name="service">
                   <option value="">選択してください</option>
-                  <option value="transport">首都圏積み合わせ配送</option>
-                  <option value="office">オフィス移転</option>
-                  <option value="waste">産業廃棄物収集運搬</option>
-                  <option value="fixture">什器設置</option>
-                  <option value="storage">貨物・商品保管</option>
-                  <option value="contract">請負業務</option>
+                  <option value="delivery">まるっと配送（積み合わせ・企業物流）</option>
+                  <option value="hr">まるっと人材（スタッフ手配）</option>
+                  <option value="disposal">まるっと処分（廃棄物・不用品）</option>
+                  <option value="cleaning">まるっと清掃（オフィス・倉庫）</option>
+                  <option value="purchase">まるっと買取（什器・備品）</option>
+                  <option value="support">まるっとサポート（移転・保管・設置）</option>
                   <option value="recruit">採用について</option>
                   <option value="other">その他</option>
                 </select>
               </div>
               <div class="form-group">
-                <label class="form-label" for="message">お問い合わせ内容 <span class="required" aria-label="必須">必須</span></label>
-                <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="ご相談内容・ご要望をできるだけ詳しくご記入ください。" required></textarea>
+                <label class="form-label" for="message">お問い合わせ内容 <span class="required">必須</span></label>
+                <textarea class="form-textarea" id="message" name="message" rows="5"
+                  placeholder="ご相談内容・ご要望をお書きください。" required></textarea>
               </div>
               <div class="form-group form-check">
                 <label class="check-label">
                   <input type="checkbox" id="privacy" name="privacy" required>
-                  <span><a href="https://yamadaunyu.co.jp/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する <span class="required" aria-label="必須">必須</span></span>
+                  <span><a href="https://yamadaunyu.co.jp/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する <span class="required">必須</span></span>
                 </label>
               </div>
               <button type="submit" class="btn btn--primary btn--full btn--lg">送信する</button>
-              <p class="form-note">※お問い合わせの内容によっては、回答までお時間をいただく場合がございます。</p>
+              <p class="form-note">※回答まで2営業日以内を目安にご連絡いたします。</p>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-  </main>
+  </main><!-- /#main -->
 
-  <!-- ========== FOOTER ========== -->
+  <!-- ========== FOOTER ==========
+       WP化時: footer.php に分割
+       ナビ: wp_nav_menu('footer') に置換
+  ========== -->
   <footer class="footer" role="contentinfo">
     <div class="footer__top">
       <div class="container">
@@ -752,11 +986,12 @@
           <div class="footer__brand">
             <a href="#" class="footer__logo" aria-label="山田運輸有限会社 トップページ">
               <img src="https://yamadaunyu.co.jp/wp-content/uploads/2025/05/image-32.png"
-                   alt="山田運輸有限会社"
-                   width="160" height="48"
-                   loading="lazy">
+                   alt="山田運輸有限会社" width="160" height="48" loading="lazy">
             </a>
-            <p class="footer__tagline">運ぶだけでは終わらない。<br>企業物流を支えるパートナー。</p>
+            <p class="footer__tagline">
+              まるっと任せて、物流のその先へ。<br>
+              <span>企業の困りごとを一括で支える物流パートナー</span>
+            </p>
             <address class="footer__address">
               〒344-0038 埼玉県春日部市大沼7-50<br>
               <a href="tel:0488789116">TEL: 048-878-9116</a>
@@ -764,14 +999,14 @@
           </div>
           <nav class="footer__nav" aria-label="フッターナビゲーション">
             <div class="footer__nav-col">
-              <p class="footer__nav-heading">サービス</p>
+              <p class="footer__nav-heading">まるっとシリーズ</p>
               <ul>
-                <li><a href="#svc-transport">首都圏積み合わせ配送</a></li>
-                <li><a href="#svc-office">オフィス移転丸ごとパック</a></li>
-                <li><a href="#svc-waste">産業廃棄物収集運搬業</a></li>
-                <li><a href="#svc-fixture">什器の設置</a></li>
-                <li><a href="#svc-storage">貨物・商品保管</a></li>
-                <li><a href="#svc-contract">請負業務</a></li>
+                <li><a href="#svc-delivery">まるっと配送</a></li>
+                <li><a href="#svc-hr">まるっと人材</a></li>
+                <li><a href="#svc-disposal">まるっと処分</a></li>
+                <li><a href="#svc-cleaning">まるっと清掃</a></li>
+                <li><a href="#svc-purchase">まるっと買取</a></li>
+                <li><a href="#svc-support">まるっとサポート</a></li>
               </ul>
             </div>
             <div class="footer__nav-col">
@@ -804,9 +1039,9 @@
     </div>
   </footer>
 
-  <!-- Page Top -->
+  <!-- ページトップボタン -->
   <a href="#" class="page-top" id="pageTop" aria-label="ページトップへ戻る">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
   </a>
 
   <script src="script.js"></script>
