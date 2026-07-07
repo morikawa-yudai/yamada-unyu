@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 b92afe78b39879ace700dde15affbb867f8ce917 Claude (site build) <build@local> 1783410759 +0000	commit (initial): feat: Hero v6.1 デザインマスター準拠実装(マスター画像直接使用・実績バーネイビー化)
+b92afe78b39879ace700dde15affbb867f8ce917 d1dbce8cd8fa5443712092af44f31cfd8fe671a9 Claude (site build) <build@local> 1783411127 +0000	commit: refactor: WordPressテーマ化前提の構成に分割(assets/css・js・images分離、WP/ACF移植コメント追加、README整備)

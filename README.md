@@ -1,128 +1,70 @@
 # 山田運輸有限会社 コーポレートサイト
 
-> フルリニューアル版 — 高級感・信頼感・先進性を持った法人向け物流コーポレートサイト
-
----
-
-## 📁 ファイル構成
+Hero v6.1(デザインマスター準拠)。**WordPressテーマ化を前提とした静的サイト**です。
 
 ```
-yamada-unyu/
-├── index.html   # メインHTML（SEO・構造化データ・OGP含む）
-├── style.css    # スタイルシート（レスポンシブ・アニメーション）
-├── script.js    # JavaScript（スクロールアニメ・カウントアップ等）
-└── README.md    # このファイル
-```
-
----
-
-## 🎨 デザインコンセプト
-
-参考サイト（信光物流 shinko-logi.jp）のクオリティを超える、  
-**「物流会社とは思えない高級感・信頼感・先進性」** をテーマにリニューアル。
-
-### カラーパレット
-| 役割 | 色 | HEX |
-|------|-----|-----|
-| ネイビー（メイン） | ■ | `#1a3a5c` |
-| ネイビー（深） | ■ | `#0f2540` |
-| ブルー（アクセント） | ■ | `#228ed6` |
-| ブルー（明） | ■ | `#3aa3e8` |
-| ホワイト | □ | `#ffffff` |
-
-### フォント
-- 日本語：Noto Sans JP（300/400/500/700/900）
-- 英語：Inter（300/400/500/600/700）
-
----
-
-## 📄 ページ構成（TOPページ）
-
-1. **ヒーロー** — 大型物流写真、キャッチコピー、CTAボタン（問い合わせ・採用）
-2. **ティッカー** — サービス一覧の流れるテキスト
-3. **選ばれる理由** — 6枚カード形式
-4. **数字で見る山田運輸** — カウントアップアニメーション付き統計
-5. **サービス一覧** — 6サービス（アイコン付きカード）
-6. **安全への取り組み** — パララックス背景＋4項目
-7. **対応エリア** — Googleマップ埋め込み＋許可エリア一覧
-8. **会社案内** — 代表者挨拶＋会社概要テーブル
-9. **よくあるご質問** — アコーディオン形式5問
-10. **採用情報** — 大型CTAセクション
-11. **お問い合わせ** — 電話＋フォーム（バリデーション付き）
-
----
-
-## ✨ 機能
-
-- **スクロールアニメーション** — Intersection Observer による fade-up
-- **カウントアップ** — 統計数字のアニメーション表示
-- **スムーズスクロール** — アンカーリンク対応
-- **ハンバーガーメニュー** — モバイル対応
-- **ドロップダウンナビ** — PC用サービス展開メニュー
-- **フォームバリデーション** — クライアントサイド検証＋送信完了演出
-- **動画対応構造** — ヒーローセクションに動画切り替え対応済み（`<video>`タグ準備）
-- **ページトップボタン** — スクロール後に表示
-
----
-
-## 🔍 SEO 対応
-
-- `<title>` / `<meta description>` 設定済み
-- OGP（og:title / og:description / og:image / og:url）設定済み
-- Twitter Card 設定済み
-- 構造化データ（JSON-LD / Organization）設定済み
-- セマンティックHTML（`<header>` / `<main>` / `<footer>` / `<article>` / `<section>` / `<nav>`）
-- `alt` テキスト全画像設定済み
-- `aria-label` / `role` 設定済み（アクセシビリティ対応）
-- `<address>` タグ使用
-
----
-
-## 📱 レスポンシブ対応
-
-| ブレークポイント | 対象 |
-|----------------|------|
-| 〜480px | スモールモバイル |
-| 〜768px | モバイル |
-| 〜1024px | タブレット |
-| 1025px〜 | デスクトップ |
-
----
-
-## 🚀 動画対応（将来）
-
-ヒーローセクションに `<video>` タグが準備されています。  
-動画ファイル（`video/hero.mp4`）を配置し、以下のコードを有効化してください：
-
-```html
-<!-- index.html の heroVideoWrap の hidden を外す -->
-<div class="hero__video-wrap" id="heroVideoWrap">
-  <video autoplay muted loop playsinline poster="...">
-    <source src="video/hero.mp4" type="video/mp4">
-  </video>
-</div>
+/assets
+  /css/style.css        … 全スタイル(セクション別コメント区切り)
+  /js/main.js           … ヘッダー状態・メニュー・スムーススクロール・スクロール表示
+  /js/countup.js        … 実績数値カウントアップ
+  /js/hero.js           … Heroアニメーション(GSAP)
+  /images/              … ロゴ・Hero背景・実車写真
+/index.html             … 本体(各セクションにWP移植コメント入り)
+/README.md
 ```
 
 ---
 
-## 📦 使用技術
+## 1. 静的HTMLとしての確認方法
+`index.html` をブラウザで開くだけで動作します。
+(GSAP / Lenis のみCDN読込のためネット接続推奨。オフラインでもレイアウトは表示されます)
 
-- HTML5
-- CSS3（カスタムプロパティ・Grid・Flexbox・アニメーション）
-- Vanilla JavaScript（ES6+）
-- Google Fonts（Noto Sans JP / Inter）
-- Google Maps Embed API
+## 2. GitHub / Vercel に上げる方法
+1. GitHubで空リポジトリ作成 → このフォルダで `git remote add origin <URL>` → `git push -u origin main`
+2. Vercel「Add New → Project」→ リポジトリをImport → 設定変更なしでDeploy(静的サイト)
+3. 以降は main へのPushで自動デプロイ
+
+ブランチ運用: `main`=本番 / `feature/*`=修正(完了後mainへマージ)
+コミット規約: `feat:` 新機能 / `fix:` 修正 / `refactor:` 整理 / `style:` デザイン調整
+
+## 3. WordPressテーマ化する際の移植メモ
+- **分割方針**: `index.html` 内の `<!-- ==== セクション名 → WP移植: ○○ ==== -->` コメントが分割単位
+  - HEADER → `header.php` / FOOTER → `footer.php` / それ以外 → `front-page.php` 内のセクション(または `template-parts/front/*.php`)
+- **アセット読込**: `style.css`・各JSは `functions.php` の `wp_enqueue_style / wp_enqueue_script` で登録。CDN(GSAP/Lenis)も同様に enqueue
+- **画像パス**: `assets/images/...` → `get_template_directory_uri() . '/assets/images/...'` に置換
+- **お知らせ**: 投稿タイプ **News**(`register_post_type('news')`)。`.news-row` をWP_Queryループに置換
+- **サービス**: カスタム投稿タイプ **Services**。`.bcard` 1枚=1投稿
+- **採用情報**: 固定ページ or **Recruit CPT**
+- **ナビ**: `wp_nav_menu()`(位置: global / footer)
+- **フォーム**: Contact Form 7 等を設置し、CONTACTセクションのボタンリンクを差し替え
+
+## 4. ACFで編集可能にする推奨項目
+| グループ | フィールド | 現在の場所 |
+|---|---|---|
+| hero | キャッチコピー3行 / リード / CTA×2 / 背景画像 / 動画URL | HEROセクション |
+| stats(リピーター) | ラベル / 数値 / 単位 / キャプション ×6 | 実績数値バー |
+| services | 英字ラベル / サービスリスト(リピーター) | 事業内容カード |
+| qualifications(リピーター) | 資格名 | 許認可バー |
+| company | 代表メッセージ / 代表者名 / 会社概要(住所・TEL・FAX・設立・資本金・体制) / 実車写真 | 会社案内 |
+| recruit | 待遇チップ(リピーター) / 日給min・max / 募集職種 | 採用情報 |
+| contact | タイトル / リード / 電話番号 / 受付時間 / フォームリンク | お問い合わせ |
+
+## 5. 管理画面から更新させたい項目一覧(運用者向け)
+- お知らせの追加・編集(News投稿)
+- サービス内容の追加・編集(Services投稿)
+- 採用情報(待遇チップ・日給・職種)
+- 会社情報(住所・電話・FAX・会社概要)
+- 実績数値(6項目の数字とキャプション)
+- CTA文言・リンク(Hero・お問い合わせ)
+- 電話番号・受付時間(お問い合わせ・フッター)
+- 画像(Hero背景・実車写真・ロゴ)
 
 ---
 
-## 🏢 会社情報
+### Hero位置の微調整
+`assets/css/style.css` の `.hero` 内CSS変数:
+`--copy-left` `--copy-top` `--h1-size` `--h1-lh` `--lead-gap` `--btn-gap`
 
-**山田運輸有限会社**  
-〒344-0038 埼玉県春日部市大沼7-50  
-TEL: 048-878-9116  
-設立: 1977年7月（昭和52年）  
-https://yamadaunyu.co.jp/
-
----
-
-© 2025 山田運輸有限会社 All Rights Reserved.
+### 差し替えポイント
+- Hero背景: `assets/images/hero-main.webp` を同名で置換するだけ
+- 動画チップ: `.hero-play` の `href` を動画URLへ
